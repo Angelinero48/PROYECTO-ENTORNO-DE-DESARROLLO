@@ -1,12 +1,17 @@
 body{
     background-color: rgb(77, 97, 196);
 }
-h1{
-    
+div{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
 button{
     background-color: white;
     border-radius: 12px;
     border-color: black;
-
+    height: 80px;
+    width: 200px;
+    font-size: 20px;
 }
+
