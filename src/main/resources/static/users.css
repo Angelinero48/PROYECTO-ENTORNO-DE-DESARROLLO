@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400&display=swap');
+html{
+  height: 100%;
+}
+body{
+  background-color: rgb(122, 122, 255);
+  font-family: 'Lexend', sans-serif;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 3px solid black;
+}
+.celda{
+  padding: 5px;
+  background-color: rgb(177, 177, 255);
+}
+.titulo{
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  grid-column: span 3;
+}
+.cabecera{
+  font-size: 20;
+  font-weight: bolder;
+}
+.usuario{
+  grid-column: span 3;
+}
