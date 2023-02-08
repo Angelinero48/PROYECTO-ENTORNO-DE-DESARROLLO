@@ -15,10 +15,10 @@
     <div class="celda cabecera">Nombre</div>
     <div class="celda cabecera">Apellidos</div>
     <div class="celda cabecera">Rol</div>
-    <div class="celda usuario" th:each="usuario: ${usuarios}">
-      <div class="datos nombre" th:text="${usuario.name}"></div>
-      <div class="datos apellidos" th:text="${usuario.surname}"></div>
-      <div class="datos rol" th:text="${usuario.rol}"></div>
+    <div class="celda usuario" th:each="user:${users}">
+      <div class="datos nombre" th:text="${user.firstname}"></div>
+      <div class="datos apellidos" th:text="${user.lastname}"></div>
+      <div class="datos rol" th:text="${user.rol}"></div>
     </div>
   </div>
 </body>

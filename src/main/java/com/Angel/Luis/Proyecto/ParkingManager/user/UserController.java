@@ -7,11 +7,11 @@ import org.springframework.web.blind.annotation.GetMapping;
 @Controller
 public class UserController {
 
-  private UserRepository repository = new UserRepository();
+  private UserRepository repository;
 
   @GetMapping("/usuarios")
-  public String dispalyUsers(Model model){
-    model.addAttribute("usuarios", repository.getAll());
-    return "listausuarios";
+  public String displayUsers(Model model) {
+    model.addAttribute("users", repository.findAll());
+    return "userlist";
   }
 }
